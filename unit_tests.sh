@@ -22,7 +22,7 @@ actual6=`java CurrencyConverter 1 Dollars`
 actual7=`java CurrencyConverter 1 POUNDS`
 actual8=`java CurrencyConverter 1 EUROS`
 actual9=`java CurrencyConverter 1 DOLLARS`
-actual10=`java CurrencyConverter " "`
+actual10=`java CurrencyConverter "manbearpig "`
 actual11=`java CurrencyConverter "1"` 
 actual12=`java CurrencyConverter "pounds "`  
 
