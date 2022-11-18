@@ -10,6 +10,7 @@ Thank you for using the converter!"
 exp3="1.0 Dollars = 0.74 Pounds
 1.0 Dollars = 0.88 Euros
 Thank you for using the converter!"
+exp4="Thank you for using the converter!"
 
 #actual output
 actual1=`java CurrencyConverter 1 pounds`
@@ -21,6 +22,9 @@ actual6=`java CurrencyConverter 1 Euros`
 actual7=`java CurrencyConverter 1 DOLLARS`
 actual8=`java CurrencyConverter 1 POUNDS`
 actual9=`java CurrencyConverter 1 EUROS`
+actual10=`java CurrencyConverter " "`
+actual11=`java CurrencyConverter "1"` 
+actual12=`java CurrencyConverter "pounds "`  
 
 #lowercase tests
 if [ "$exp1" == "$actual1" ]; then
@@ -86,5 +90,28 @@ if [ "$exp3" == "$actual9" ]; then
         echo "Test 9 Passed" 
 else
         echo "Test 9 Failed"
+exit 1
+fi
+
+#invalid arguent tests
+
+if [ "$exp4" == "$actual10" ]; then
+        echo "Test 10 Passed" 
+else
+        echo "Test 10 Failed"
+exit 1
+fi
+
+if [ "$exp4" == "$actual11" ]; then
+        echo "Test 11 Passed" 
+else
+        echo "Test 11 Failed"
+exit 1
+fi
+
+if [ "$exp4" == "$actual12" ]; then
+        echo "Test 12 Passed" 
+else
+        echo "Test 12 Failed"
 exit 1
 fi
