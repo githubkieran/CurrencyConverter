@@ -13,7 +13,7 @@ public class CurrencyConverter {
                 amount = Integer.parseInt(args[0]);
                 String currency = args[1];
 
-                // For amounts Conversions
+                // For amounts Conversion
                 switch (currency.toLowerCase()){
                         case "dollars" :
                                 // For Dollar Conversion
