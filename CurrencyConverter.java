@@ -11,7 +11,7 @@ public class CurrencyConverter {
                 DecimalFormat f = new DecimalFormat("##.##");
 
                 amount = Integer.parseInt(args[0]);
-                String currency = args[1];
+                String currency.toLowerCase = args[1];
 
                 // For amounts Conversion
                 switch (currency){
@@ -37,7 +37,7 @@ public class CurrencyConverter {
                                 System.out.println(amount + " Euros = " + f.format(pound) + " Pounds");
                                 break;
                 }
-                System.out.println("Thank you for using the converter.");
+                System.out.println("Thank you for using the converter!");
         }
 
 }
