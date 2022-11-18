@@ -5,8 +5,7 @@ import java.text.DecimalFormat;
 public class CurrencyConverter {
 
         public static void main(String[] args) {
-
-		
+	try{
                 double amount, dollar, pound, code, euro;
 
                 DecimalFormat f = new DecimalFormat("##.##");
@@ -38,12 +37,12 @@ public class CurrencyConverter {
                                 System.out.println(amount + " Euros = " + f.format(pound) + " Pounds");
                                break;
                 }
-		
-                System.out.println("Thank you for using the converter!");
-		
-		if(currency != "dollars" && currency != "pounds" && currency !="euros"){
-		System.out.println("Thank you for using the converter!");
-	}
+
+                System.out.println("Thank you for using the converter!");}
+	catch(ArrayIndexOutOfBoundsException e){System.out.println("Thank you for using the converter!");}
+	catch(NumberFormatException e){System.out.println("Thank you for using the converter!");}
+
+
         }
 
 }
