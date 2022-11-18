@@ -11,10 +11,10 @@ public class CurrencyConverter {
                 DecimalFormat f = new DecimalFormat("##.##");
 
                 amount = Integer.parseInt(args[0]);
-                String currency.toLowerCase = args[1];
+                String currency = args[1];
 
                 // For amounts Conversion
-                switch (currency){
+                switch (currency.toLowerCase()){
                         case "dollars" :
                                 // For Dollar Conversion
                                 pound = amount * 0.74;
