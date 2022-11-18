@@ -44,7 +44,7 @@ else
 exit 1
 fi
 
-#pounds tests
+#Capitalised tests
 if [ "$exp1" == "$actual4" ]; then
 	echo "Test 4 Passed" 
 else
@@ -66,7 +66,7 @@ else
 exit 1
 fi
 
-#euros tests
+#UPPERCASE tests
 
 if [ "$exp1" == "$actual7" ]; then
         echo "Test 7 Passed" 
