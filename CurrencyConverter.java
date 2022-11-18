@@ -38,6 +38,9 @@ public class CurrencyConverter {
                                 break;
                 }
                 System.out.println("Thank you for using the converter!");
+		if(currency != "dollars" && != "pounds" && != "euros" ){
+			System.out.println("Thank you for using the converter!");
+	}
         }
 
 }
